@@ -1,0 +1,124 @@
+@font-face {
+  font-family: MyFont;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #36384E;
+  font-family: MyFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container{
+  background-color: #FFFFFF;
+  display: flex;
+  width: 850px;
+  border-radius: 2rem;
+  padding: 20px;
+
+
+
+}
+
+
+ul{
+  list-style-image: url(./assets/images/icon-success.svg);
+
+}
+li{
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  padding: 10px 20px;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid grey;
+}
+ button{
+   font-family: inherit;
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #242742;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+
+ }
+
+ label{
+   /* margin-bottom: 0.1rem; */
+   font-weight: bold;
+ }
+
+ .hide{
+   display: none;
+ }
+
+ .card-2 {
+   text-align: left;
+   background-color: #fff;
+   width: 420px;
+   height: 435px;
+   border-radius: 2rem;
+   padding: 50px;
+ }
+
+.b2{
+  width: 19rem;
+}
+
+
+@media  (max-width: 760px){
+
+  .card{
+    flex-direction: column-reverse;
+    width: 85%;
+    padding: 0;
+
+  }
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+  .card h1{
+    font-size: 30px;
+  }
+
+  .first_container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+
+  }
+
+  .second_container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-container img{
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+
+  form {
+    width: 80%;
+  }
+
+}
